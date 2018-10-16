@@ -413,7 +413,7 @@ export default class TabBar<T: *> extends React.Component<Props<T>, State> {
           >
             {routes.map((route, i) => {
               const outputRange = inputRange.map(
-                inputIndex => (inputIndex === i ? 1 : 0.7)
+                inputIndex => (inputIndex === i ? 1 : 0.25)
               );
               const opacity = Animated.multiply(
                 this.state.visibility,
